@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt -y install nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+sudo ufw allow 'Nginx HTTP'
+echo "<html><body><div>Here's Johnny!</div></body></html>" > /var/www/html/index.html
+EOF
