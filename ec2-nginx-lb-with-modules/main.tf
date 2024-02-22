@@ -46,7 +46,6 @@ module "aws_lb" {
 }
 
 ### VPC ###
-#Resources
 module "aws_vpc" {
   source = "./modules/wtc-vpc"
 }
